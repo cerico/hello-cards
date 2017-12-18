@@ -8,23 +8,19 @@ const Detail = (props) => {
     }
   };
 
-  const showSecondCol = () => {
-    {props.direction == 'column' ?
-      <div style={{...section,...borderLeft}}>
-        <div style={label}>{props.textThree}</div>
-        <div style={label}>{props.textFour}</div>
-      </div>
-      :  null
-    }
-  }
+
   let border,lineHeight,paddingLeft,paddingTop
-  props.direction ==- 'column' ?
-   (border = 'dotted 1px #fff', 
-    lineHeight = '1rem',
+  if (props.direction === 'column'){
+    border = 'dotted 1px #fff',
+    lineHeight = '1rem';
     paddingTop ='25px',
-    paddingLeft = '5%' ):
-   (border = '0px', lineHeight = '1.4rem',paddingTop ='25px',
-   paddingLeft = '5%' )
+    paddingLeft = '5%' 
+  } else {
+    border = '0px', 
+    lineHeight = '1.4rem',
+    paddingTop ='25px',
+    paddingLeft = '5%'
+  }
 
   const wrapper = {
     flexDirection: 'row',
@@ -58,7 +54,9 @@ const Detail = (props) => {
   
   const label = {
     fontSize: '14px',
-    lineHeight: props.lineHeight
+    lineHeight: lineHeight,
+    fontFamily: 'roboto',
+    fontSize: '1.3rem'
   };
 
   const borderLeft = {
@@ -71,7 +69,12 @@ const Detail = (props) => {
         <div style={label}>{props.textOne}</div>
         <div style={label}>{props.textTwo}</div>
       </div>
-        {showSecondCol()}
+      {props.direction == 'column' ?
+      <div style={{...section,...borderLeft}}>
+        <div style={label}>{props.textThree}</div>
+        <div style={label}>{props.textFour}</div>
+      </div>
+      :  null}
         {showThirdCol()}
     </div>
   );
