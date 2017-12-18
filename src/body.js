@@ -21,7 +21,10 @@ const Body = (props) => {
     <div style={whatStyle}>
       <Top {...props}/>
       <Detail {...props}/>
-      <WideLogo logo={props.logo}/>
+      {props.direction == column ? 
+        <WideLogo logo={props.logo}/>
+        : null
+      }
     </div>
   )
 }

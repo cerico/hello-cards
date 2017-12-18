@@ -10,17 +10,21 @@ const Top = (props) => {
     marginBottom: '.625rem',
     paddingBottom: 0,
     minHeight: 12,
-    marginTop: '0.75rem'
+    marginTop: '0.15rem'
   };
 
   var textStyle = {
-    fontSize: '0.85rem',
+    fontSize: '1.25rem',
     marginBottom: '.3rem'
   };
 
   return (
     <div style={divStyle}>
       <p style={textStyle}>{props.description}</p>
+      {props.direction == row ? 
+        <img src={props.logo}/>
+        : null
+      }
     </div>
   )
 };
