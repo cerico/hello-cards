@@ -11,13 +11,14 @@ const Cardu = (props) => {
 
     const cardStyle = {
       background: props.background,
-      color: props.color      
+      color: props.color,
+      opacity: props.opacity || 0.88   
     };
 
     if (props.url) {
       return <a href={props.url} className={styles.card} style={cardStyle}>{innerCard()}</a>
     }
-    return null
+    return <a href={props.url} className={styles.card} style={cardStyle}>{innerCard()}</a>
   }
 
   const innerCard = () => {
@@ -35,7 +36,7 @@ const Cardu = (props) => {
   }
 
   const showData = () =>{
-   return (<CardBody {...props}/>)
+    return (<CardBody {...props}/>)
   }
 
   return internalExternal()
