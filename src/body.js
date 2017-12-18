@@ -12,9 +12,14 @@ const Body = (props) => {
     height: '100%'
 
   };
+  let marginBottom;
+  props.product.direction === 'row' ? 
+    marginBottom = '100px' : marginBottom = '0px'
+
   const whatStyle = {
     display: 'flex',
-    flexDirection: props.product.direction || 'row'
+    flexDirection: props.product.direction || 'row',
+    marginBottom: marginBottom
   };
 
   return (
