@@ -18,6 +18,10 @@ const Detail = (props) => {
     }
   }
 
+  props.direction ==- 'column' ?
+   (props.border = 'dotted 1px #fff', props.lineHeight = '1rem' ):
+   (props.border = '0px', props.lineHeight = '1.4rem')
+
   const wrapper = {
     flexDirection: 'row',
     display: 'flex',
@@ -27,8 +31,8 @@ const Detail = (props) => {
     paddingTop: '8px',
     paddingBottom: '8px',
     marginBottom: '5px',
-    borderTop: 'dotted 1px #fff',
-    borderBottom: 'dotted 1px #fff'
+    borderTop: props.border,
+    borderBottom: props.border
   };
 
   const section = {
@@ -45,6 +49,7 @@ const Detail = (props) => {
     marginBottom: '5%'
   };
 
+  
   const label = {
     fontSize: '14px',
     lineHeight: '1rem'
