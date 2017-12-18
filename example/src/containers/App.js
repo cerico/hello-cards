@@ -7,8 +7,9 @@ import {
 } from 'react-router-dom';
 const classNames = require('classnames');
 
-import Product from '../components/Product';
+import Layout from '../components/layout/index.js';
 import Products from '../components/Products';
+import About from '../components/About';
 import { getProducts } from '../actions/Products';
 
 class App extends React.Component  {
@@ -18,11 +19,11 @@ class App extends React.Component  {
     return (
       <Router>
         <main>
-          <Route component={Products}/>
+          <Route component={Layout}/>
           <div>
             <Switch>
-              <Route exact path="/" />
-              <Route path="/products/:id" component={Product} />
+              <Route exact path="/" component={Products} />
+              <Route exact path="/about" component={About}/>
             </Switch>
           </div>
         </main>
