@@ -10,7 +10,8 @@ const Top = (props) => {
     marginBottom: '.625rem',
     paddingBottom: 0,
     minHeight: 12,
-    marginTop: '0.15rem'
+    marginTop: '0.15rem',
+    width:'360px'
   };
 
   var textStyle = {

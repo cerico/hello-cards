@@ -13,13 +13,13 @@ const Detail = (props) => {
   if (props.direction === 'column'){
     border = 'dotted 1px #fff',
     lineHeight = '1rem';
-    paddingTop ='25px',
-    paddingLeft = '5%' 
+    paddingTop ='13px',
+    paddingLeft = '0%' 
   } else {
     border = '0px', 
     lineHeight = '1.4rem',
     paddingTop ='25px',
-    paddingLeft = '5%'
+    paddingLeft = '7%'
   }
 
   const wrapper = {
@@ -65,10 +65,12 @@ const Detail = (props) => {
 
   return (
     <div style={wrapper}>
+    {props.direction == 'column' ?
       <div style={section}>
         <div style={label}>{props.textOne}</div>
         <div style={label}>{props.textTwo}</div>
       </div>
+      :  null}
       {props.direction == 'column' ?
       <div style={{...section,...borderLeft}}>
         <div style={label}>{props.textThree}</div>
@@ -83,7 +85,20 @@ const Detail = (props) => {
       </div>
       
       :  null}
-        {showThirdCol()}
+        {props.direction == 'column' ?
+        null :
+        <div style={section}>
+        <div style={label}>{props.textOne}</div>
+        <div style={label}>{props.textTwo}</div>
+        <div style={label}>{props.textThree}</div>
+        <div style={label}>{props.textFour}</div>
+        <div style={label}>{props.textFive}</div>
+        <div style={label}>{props.textSix}</div>
+      </div>
+
+  }
+        
+        
     </div>
   );
 };
