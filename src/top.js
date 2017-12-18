@@ -17,12 +17,17 @@ const Top = (props) => {
     fontSize: '1.25rem',
     marginBottom: '.3rem'
   };
+  var logo = {
+    backgroundImage: 'url(\'' + props.logo + '\')',
+    height: '108px',
+    backgroundSize: 'cover'
+  }
 
   return (
     <div style={divStyle}>
       <p style={textStyle}>{props.description}</p>
-      {props.direction == row ? 
-        <img src={props.logo}/>
+      {props.direction == 'row' ? 
+        <div style={logo}/>
         : null
       }
     </div>
