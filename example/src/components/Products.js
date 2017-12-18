@@ -9,6 +9,7 @@ import ProductItem from './ProductItem';
 class Products extends React.Component  {
 
   render (){
+console.log(this.props)
     let display
     this.props.location.pathname === '/' ?
       display = 'flex' :

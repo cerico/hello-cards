@@ -6,7 +6,7 @@
   "dependencies": {
     "express": "^4.16.2",
     "grainy": "^1.0.7",
-    "hello-cards": "0.0.32"
+    "hello-cards": "0.0.34"
   },
   "devDependencies": {
     "autoprefixer": "7.1.2",
