@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Archivo');
-
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 .card{
   margin-bottom:1.1rem;
   height:330px;
-  opacity:0.77;
   width:330px;
   font-family:archivo narrow;
   display:inline-block;
@@ -15,6 +16,7 @@
   margin-bottom:2%;
   -webkit-overflow-scrolling:auto;
   padding:1.25rem;
+  opacity: 0.88;
   display:block;
   margin-right:15px;
   border-radius:.3125rem;

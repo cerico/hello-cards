@@ -5,6 +5,7 @@ const Header = (props) => {
 
     const colourStyle = {
       borderColor: props.color,
+      fontFamily: 'roboto'
     };
 
     const textStyle = {
