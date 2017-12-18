@@ -8,6 +8,16 @@ const Detail = (props) => {
     }
   };
 
+  const showSecondCol = () => {
+    {props.direction == 'column' ?
+      <div style={{...section,...borderLeft}}>
+        <div style={label}>{props.textThree}</div>
+        <div style={label}>{props.textFour}</div>
+      </div>
+      :  null
+    }
+  }
+
   const wrapper = {
     flexDirection: 'row',
     display: 'flex',
@@ -50,10 +60,7 @@ const Detail = (props) => {
         <div style={label}>{props.textOne}</div>
         <div style={label}>{props.textTwo}</div>
       </div>
-      <div style={{...section,...borderLeft}}>
-        <div style={label}>{props.textThree}</div>
-        <div style={label}>{props.textFour}</div>
-      </div>
+        {showSecondCol()}
         {showThirdCol()}
     </div>
   );
