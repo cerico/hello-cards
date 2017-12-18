@@ -3,14 +3,14 @@ import React from 'react';
 const Detail = (props) => {
 
   const showThirdCol = function showThirdCol() {
-    if (props.cols == 3) {
+    if (props.product.cols == 3) {
       <div></div>
     }
   };
 
 
   let border,lineHeight,paddingLeft,paddingTop
-  if (props.direction === 'column'){
+  if (props.product.direction === 'column'){
     border = 'dotted 1px #fff',
     lineHeight = '1rem';
     paddingTop ='13px',
@@ -65,35 +65,35 @@ const Detail = (props) => {
 
   return (
     <div style={wrapper}>
-    {props.direction == 'column' ?
+    {props.product.direction == 'column' ?
       <div style={section}>
-        <div style={label}>{props.textOne}</div>
-        <div style={label}>{props.textTwo}</div>
+        <div style={label}>{props.product.textOne}</div>
+        <div style={label}>{props.product.textTwo}</div>
       </div>
       :  null}
-      {props.direction == 'column' ?
+      {props.product.direction == 'column' ?
       <div style={{...section,...borderLeft}}>
-        <div style={label}>{props.textThree}</div>
-        <div style={label}>{props.textFour}</div>
+        <div style={label}>{props.product.textThree}</div>
+        <div style={label}>{props.product.textFour}</div>
       </div>
       
       :  null}
-       {props.direction == 'column' ?
+       {props.product.direction == 'column' ?
       <div style={{...section,...borderLeft}}>
-        <div style={label}>{props.textThree}</div>
-        <div style={label}>{props.textFour}</div>
+        <div style={label}>{props.product.textThree}</div>
+        <div style={label}>{props.product.textFour}</div>
       </div>
       
       :  null}
-        {props.direction == 'column' ?
+        {props.product.direction == 'column' ?
         null :
         <div style={section}>
-        <div style={label}>{props.textOne}</div>
-        <div style={label}>{props.textTwo}</div>
-        <div style={label}>{props.textThree}</div>
-        <div style={label}>{props.textFour}</div>
-        <div style={label}>{props.textFive}</div>
-        <div style={label}>{props.textSix}</div>
+        <div style={label}>{props.product.textOne}</div>
+        <div style={label}>{props.product.textTwo}</div>
+        <div style={label}>{props.product.textThree}</div>
+        <div style={label}>{props.product.textFour}</div>
+        <div style={label}>{props.product.textFive}</div>
+        <div style={label}>{props.product.textSix}</div>
       </div>
 
   }

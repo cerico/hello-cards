@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = (props) => {
 
   const colourStyle = {
-    borderColor: props.color,
+    borderColor: props.product.color,
     borderStyle: 'solid',
     borderTopWidth: '1px'
   };
@@ -17,7 +17,7 @@ const Footer = (props) => {
 
   return(
     <div style={colourStyle}>
-      <p style={urlStyle}>{props.url}</p>
+      <p style={urlStyle}>{props.product.url}</p>
      </div>
   )
 };

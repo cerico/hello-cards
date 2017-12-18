@@ -10,15 +10,15 @@ const Cardu = (props) => {
   const internalExternal = () => {
 
     const cardStyle = {
-      background: props.background,
-      color: props.color,
-      opacity: props.opacity || 0.88   
+      background: props.product.background,
+      color: props.product.color,
+      opacity: props.product.opacity || 0.88   
     };
 
-    if (props.url) {
-      return <a href={props.url} className={styles.card} style={cardStyle}>{innerCard()}</a>
+    if (props.product.url) {
+      return <a href={props.product.url} className={styles.card} style={cardStyle}>{innerCard()}</a>
     }
-    return <a href={props.url} className={styles.card} style={cardStyle}>{innerCard()}</a>
+    return <a href={props.product.url} className={styles.card} style={cardStyle}>{innerCard()}</a>
   }
 
   const innerCard = () => {

@@ -4,7 +4,7 @@ var classNames = require('classnames');
 const Top = (props) => {
 
   var divStyle = {
-    borderColor: props.color,
+    borderColor: props.product.color,
     borderWidth: 0,
     borderBottomWidth: '1px',
     marginBottom: '.625rem',
@@ -19,15 +19,15 @@ const Top = (props) => {
     marginBottom: '.3rem'
   };
   var logo = {
-    backgroundImage: 'url(\'' + props.logo + '\')',
+    backgroundImage: 'url(\'' + props.product.logo + '\')',
     height: '108px',
     backgroundSize: 'cover'
   }
 
   return (
     <div style={divStyle}>
-      <p style={textStyle}>{props.description}</p>
-      {props.direction == 'row' ? 
+      <p style={textStyle}>{props.product.description}</p>
+      {props.product.direction == 'row' ? 
         <div style={logo}/>
         : null
       }

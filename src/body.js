@@ -14,15 +14,15 @@ const Body = (props) => {
   };
   const whatStyle = {
     display: 'flex',
-    flexDirection: props.direction || 'row'
+    flexDirection: props.product.direction || 'row'
   };
 
   return (
     <div style={whatStyle}>
       <Top {...props}/>
       <Detail {...props}/>
-      {props.direction == 'column' ? 
-        <WideLogo logo={props.logo}/>
+      {props.product.direction == 'column' ? 
+        <WideLogo logo={props.product.logo}/>
         : null
       }
     </div>
