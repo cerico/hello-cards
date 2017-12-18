@@ -55,8 +55,8 @@ const Detail = (props) => {
   const label = {
     fontSize: '14px',
     lineHeight: lineHeight,
-    fontFamily: 'roboto',
-    fontSize: '1.3rem'
+    fontFamily: 'archivo narrow',
+    fontSize: '1.1rem'
   };
 
   const borderLeft = {
@@ -74,6 +74,14 @@ const Detail = (props) => {
         <div style={label}>{props.textThree}</div>
         <div style={label}>{props.textFour}</div>
       </div>
+      
+      :  null}
+       {props.direction == 'column' ?
+      <div style={{...section,...borderLeft}}>
+        <div style={label}>{props.textThree}</div>
+        <div style={label}>{props.textFour}</div>
+      </div>
+      
       :  null}
         {showThirdCol()}
     </div>
