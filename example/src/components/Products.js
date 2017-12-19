@@ -28,10 +28,8 @@ console.log(this.props)
         {this.props.products.length > 0 ? 
           this.props.products.map((product, i) =>
             <Card 
-              url="jttp://www.google.com"
               product={product}
               key = {i}
-              className={style.card}
             />
           ) 
           : null
