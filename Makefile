@@ -1,6 +1,6 @@
 setup:
 	cd example && npm install
-example:
+go:
 	cd example && npm run dev
 build:
 	npm run build

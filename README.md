@@ -75,5 +75,5 @@ There is also a Makefile for easier use, you can run all examples from top level
 
 ```
 ➜  hello-cards git:(master) make setup
-➜  hello-cards git:(master) make example
+➜  hello-cards git:(master) make go
 ```

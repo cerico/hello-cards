@@ -1,5 +1,7 @@
 var path = require('path');
 var express = require('express');
+const history = require('connect-history-api-fallback')
+const staticFileMiddleware = express.static('dist');
 
 var app = express();
 
@@ -16,6 +18,13 @@ app.get('/public/*', function(req,res){
 app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
+
+app.use(staticFileMiddleware);
+app.use(history({
+  disableDotRule: true,
+  verbose: true
+}));
+app.use(staticFileMiddleware);
 
 app.listen(port, 'localhost', function(err) {
   if (err) {
