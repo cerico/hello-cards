@@ -46,6 +46,30 @@ class About extends React.Component  {
       img: {
        marginTop:'10px',
        width:'528px'
+      },
+      code: {
+        width: '100%',
+        fontSize: '21px',
+        color: 'rgb(249, 247, 238)',
+        fontFamily: 'archivo narrow',
+        fontWeight: '100',
+        minWidth:'520px',
+        background:'rgb(84, 159, 184)'
+      },
+      outerCode: {
+        padding:'4%',
+        width:'524px',
+        background:'rgb(84, 159, 184)'
+      },
+      innerCode :{
+        width: '100%',
+        fontSize: '21px',
+        padding: '5%',
+        color: 'rgb(249, 247, 238)',
+        fontFamily: 'archivo narrow',
+        fontWeight: '100',
+        minWidth:'520px',
+        background:'rgb(84, 159, 184)'
       }
     }
 
@@ -58,23 +82,40 @@ class About extends React.Component  {
 
         <div style={style.blurb}>
         Firstly, install the package<br/>
-
-        <img style={style.img} src="https://s3.eu-west-2.amazonaws.com/io1937/screenshots/install.jpeg"/><br/></div>
+        <pre style={style.innerCode}>➜  musicali git:(dev) ✗ npm install hello-cards</pre>
+       </div>
 
         <div style={style.blurb}>Secondly import into your project<br/>
 
-        <img style={style.img} src="https://s3.eu-west-2.amazonaws.com/io1937/screenshots/import.jpeg"/><br/></div>
+        <pre style={style.innerCode}>import Card from 'hello-cards';</pre>
+        </div>
 
         <div style={style.blurb}>Thirdly, include the Card component in your render method<br/>
-
-        <img style={style.img} src="https://s3.eu-west-2.amazonaws.com/io1937/screenshots/include.jpeg"/><br/></div>
+        <pre style={style.innerCode}>{`<Card product={product}/>`}</pre></div>
+        {/* <img style={style.img} src="https://s3.eu-west-2.amazonaws.com/io1937/screenshots/include.jpeg"/><br/></div> */}
 
         <div style={style.blurb}>Fourth, pass it a product object, here is an example product object<br/>
-
-        <img style={style.img} src="https://s3.eu-west-2.amazonaws.com/io1937/screenshots/product.jpeg"/><br/></div>
-
-        <div style={style.blurb}>You can see full example code for a project using Hello-Cards, at <a href="https://github.com/cerico/hello-cards">https://github.com/cerico/hello-cards</a><br/>
+        <pre style={style.outerCode}>
+          <code style={style.code}>{`const product = {`}</code><br/>
+          <code style={style.code}>{`  name: "Musico",`}</code><br/>
+          <code style={style.code}>{`  page:  '/rocogo',`}</code><br/>
+          <code style={style.code}>{`  description: "A music player",`}</code><br/>
+          <code style={style.code}>{`  color:  "rgb(246, 235, 213)",`}</code><br/>
+          <code style={style.code}>{`  cols:  "2",`}</code><br/>
+          <code style={style.code}>{`  direction:  'row',`}</code><br/>
+          <code style={style.code}>{`  background:  'rgb(79, 92, 191)',`}</code><br/>
+          <code style={style.code}>{`  url:  "http://musico.malham.io",`}</code><br/>
+          <code style={style.code}>{`  logo: 'http://malham.io/roco-wide.png',`}</code><br/>
+          <code style={style.code}>{`  textOne: "React",`}</code><br/>
+          <code style={style.code}>{`  textTwo: "Redux",`}</code><br/>
+          <code style={style.code}>{`  number: 12`}</code><br/>
+          <code style={style.code}>{`}`}</code>
+        </pre>
         
+        </div>
+
+        <div style={style.blurb}>Full example code at <a href="https://github.com/cerico/hello-cards">https://github.com/cerico/hello-cards</a><br/>
+        <div style={style.blurb}>GitHub README is  <a href="https://github.com/cerico/hello-cards/blob/master/README.md">here</a></div>
         </div>
       </div> 
     )

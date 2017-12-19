@@ -1,9 +1,10 @@
 var path = require('path');
 var express = require('express');
 const history = require('connect-history-api-fallback')
-const staticFileMiddleware = express.static('dist');
+
 
 var app = express();
+const staticFileMiddleware = express.static('dist');
 
 var port=59024
 
