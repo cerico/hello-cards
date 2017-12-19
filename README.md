@@ -58,7 +58,7 @@ Any of the properties here can be edited, eg, column and row provide different v
 
 ### Example
 
-To see an example project in an action, clone this repo, cd into example, run npm install and npm run dev. The example project has and array of product objects, and can also be viewed at http://hello-card-examples.malham.io
+To see an example project in an action, clone this repo, cd into example, run npm install and npm run dev. The example project has and array of product objects, and can also be viewed at http://hello-card-example.malham.io
 
 ```
 ➜  /tmp git clone https://github.com/cerico/hello-cards.git
