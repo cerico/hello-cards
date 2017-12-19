@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
-    "react": "^15.5.4",
-    "webpack": "^2.6.1",
+    "react": "^16.2.0",
+    "webpack": "^3.10.0",
     "style-loader": "^0.19.1",
     "css-loader": "^0.28.7",
     "node-sass": "^4.7.2",
