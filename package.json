@@ -1,6 +1,6 @@
 {
-  "name": "damn-cards",
-  "version": "0.5.5",
+  "name": "hello-cards",
+  "version": "0.1.2",
   "description": "Put a description here",
   "main": "build/index.js",
   "peerDependencies": {

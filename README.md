@@ -50,11 +50,12 @@ const product = {
   textThree: "Rails",
   textFour: "Docker",
   textFive: "Heroku",
-  number: 7
+  number: 7,
+  mini:false
 }
 ```
 
-Any of the properties here can be edited, eg, column and row provide different views, the number shows if there is no logo
+Any of the properties here can be edited, eg, column and row provide different views, the number shows if there is no logo. mini:true shows a smaller sized card
 
 ### Example
 
