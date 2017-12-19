@@ -12,7 +12,7 @@ const Detail = (props) => {
   let border,lineHeight,paddingLeft,paddingTop
   if (props.product.direction === 'column'){
     border = 'dotted 1px',
-    lineHeight = '1rem';
+    lineHeight = '1.1rem';
     paddingTop ='13px',
     paddingLeft = '0%' 
   } else {
