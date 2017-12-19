@@ -70,3 +70,10 @@ To see an example project in an action, clone this repo, cd into example, run np
 ```
 
 Browse to http://localhost:3404
+
+There is also a Makefile for easier use, you can run all examples from top level, using this
+
+```
+➜  hello-cards git:(master) make setup
+➜  hello-cards git:(master) make example
+```
