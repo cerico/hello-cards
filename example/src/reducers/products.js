@@ -33,7 +33,7 @@ const initialState = [{
   direction:  'column',
   background:  'rgb(64, 116, 69)',
   url:  "http://www.google.com",
-  logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
+  // logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
   textThree: "Rails"
@@ -72,7 +72,7 @@ const initialState = [{
   direction:  'column',
   background:  'rgb(230, 185, 185)',
   url:  "http://www.google.com",
-  logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
+  // logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
   textThree: "Rails"
