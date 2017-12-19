@@ -8,12 +8,20 @@ import styles from './card.css'
 const Cardu = (props) => {
 
   const internalExternal = () => {
+    
 
+    console.log(props.product)
     const cardStyle = {
       background: props.product.background,
       color: props.product.color,
-      opacity: props.product.opacity || 0.88   
+      opacity: props.product.opacity || 0.88
     };
+
+    if (props.product.mini){
+      cardStyle.height = '190px'
+    }
+
+    console.log(cardStyle)
 
     if (props.product.url) {
       return <a href={props.product.url} className={styles.card} style={cardStyle}>{innerCard()}</a>
