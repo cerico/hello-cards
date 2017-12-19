@@ -82,7 +82,7 @@ const Detail = (props) => {
       </div>
       
       :  null}
-       {props.product.direction == 'column' ?
+       {props.product.direction == 'column' && props.product.textFive ?
       <div style={{...section,...borderLeft}}>
         <div style={label}>{props.product.textFive}</div>
         <div style={label}>{props.product.textSix}</div>

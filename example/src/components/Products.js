@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 const classNames = require('classnames');
 import styles from './products.css';
-import Card from 'hello-cards';
+import Card from 'damn-cards';
 
 import ProductItem from './ProductItem';
 

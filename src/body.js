@@ -26,7 +26,7 @@ const Body = (props) => {
     <div style={whatStyle}>
       <Top {...props}/>
       <Detail {...props}/>
-      {props.product.direction == 'column' ? 
+      {props.product.direction == 'column' && !props.product.mini? 
         <WideLogo {...props}/>
         : null
       }

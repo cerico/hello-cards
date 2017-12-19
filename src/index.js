@@ -23,7 +23,6 @@ const Cardu = (props) => {
 
   const innerCard = () => {
     const inner = {
-      height: '18.125rem',
       paddingBottom: '1.25rem',
       paddingTop: '2.25rem',
       position: 'relative'
@@ -31,7 +30,7 @@ const Cardu = (props) => {
     return <div style={inner}>
       <Header {...props}/>
       {showData()}
-      <Footer {...props}/>
+      {!props.product.mini ? <Footer {...props}/> : null}
     </div>
   }
 

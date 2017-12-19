@@ -43,6 +43,7 @@ const initialState = [{
   textOne: "React",
   textTwo: "Redux",
   textThree: "Rails",
+  mini: true,
   number: 14
 },{
   name: "Musico",
@@ -69,9 +70,6 @@ const initialState = [{
   logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
-  textThree: "Rails",
-  textFour: "D3",
-  textFive: "Docker",
   number: 4
 },{
   name: "Spare",
