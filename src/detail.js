@@ -51,6 +51,10 @@ const Detail = (props) => {
     marginBottom: '5%'
   };
 
+  const spacer = {
+    height:'27px'
+  }
+
   
   const label = {
     fontSize: '14px',
@@ -80,8 +84,8 @@ const Detail = (props) => {
       :  null}
        {props.product.direction == 'column' ?
       <div style={{...section,...borderLeft}}>
-        <div style={label}>{props.product.textThree}</div>
-        <div style={label}>{props.product.textFour}</div>
+        <div style={label}>{props.product.textFive}</div>
+        <div style={label}>{props.product.textSix}</div>
       </div>
       
       :  null}

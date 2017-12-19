@@ -14,7 +14,7 @@ const Body = (props) => {
   };
   let marginBottom;
   props.product.direction === 'row' ? 
-    marginBottom = '100px' : marginBottom = '0px'
+    marginBottom = '127px' : marginBottom = '0px'
 
   const whatStyle = {
     display: 'flex',
