@@ -68,4 +68,4 @@ To see an example project in an action, clone this repo, cd into example, run np
 ➜  example git:(master) npm run dev
 ```
 
-Browse to http:/localhost:3404
+Browse to http://localhost:3404
