@@ -55,6 +55,7 @@ const initialState = [{
   logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
+  textThree: "D3",
   number: 4
 },{
   name: "Spare",
