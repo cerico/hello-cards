@@ -31,6 +31,21 @@ const initialState = [{
   textFive: "Redux",
   number: 7
 },{
+  name: "Diagnostics",
+  page:  '/rocogo',
+  description: "Diagnotics Tool",
+  color:  "rgb(246, 235, 213)",
+  cols:  "2",
+  direction:  'column',
+  background:  'rgb(64, 116, 69)',
+  url:  "http://diagnostics.malham.io",
+  // logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
+  textOne: "React",
+  textTwo: "Redux",
+  textThree: "Rails",
+  mini: false,
+  number: 14
+},{
   name: "Musico",
   page:  '/rocogo',
   description: "A music player",
@@ -72,21 +87,6 @@ const initialState = [{
   textFour: "Docker",
   textFive: "D3",
   number: 10
-},{
-  name: "Diagnostics",
-  page:  '/rocogo',
-  description: "Diagnotics Tool",
-  color:  "rgb(246, 235, 213)",
-  cols:  "2",
-  direction:  'column',
-  background:  'rgb(64, 116, 69)',
-  url:  "http://diagnostics.malham.io",
-  // logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
-  textOne: "React",
-  textTwo: "Redux",
-  textThree: "Rails",
-  mini: true,
-  number: 14
 }]
 
 export default (state = initialState, action) => {
