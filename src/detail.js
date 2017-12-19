@@ -60,7 +60,7 @@ const Detail = (props) => {
     fontSize: '14px',
     lineHeight: lineHeight,
     fontFamily: 'archivo narrow',
-    fontSize: '1.1rem'
+    fontSize: '1rem'
   };
 
   const borderLeft = {
