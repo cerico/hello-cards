@@ -10,7 +10,8 @@ const initialState = [{
   logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
-  textThree: "Rails"
+  textThree: "Rails",
+  number: 7
 },{
   name: "Roco Go",
   page:  '/rocogo',
@@ -23,7 +24,8 @@ const initialState = [{
   logo: 'http://malham.io/roco-wide.png',
   textOne: "React",
   textTwo: "Redux",
-  textThree: "Rails"
+  textThree: "Rails",
+  number: 7
 },{
   name: "Roco Go",
   page:  '/rocogo',
@@ -36,7 +38,8 @@ const initialState = [{
   // logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
-  textThree: "Rails"
+  textThree: "Rails",
+  number: 7
 },{
   name: "Roco Go",
   page:  '/rocogo',
@@ -49,7 +52,8 @@ const initialState = [{
   logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
-  textThree: "Rails"
+  textThree: "Rails",
+  number: 12
 },{
   name: "Roco Go",
   page:  '/rocogo',
@@ -62,7 +66,8 @@ const initialState = [{
   logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
-  textThree: "Rails"
+  textThree: "Rails",
+  number: 4
 },{
   name: "Roco Go",
   page:  '/rocogo',
@@ -75,7 +80,8 @@ const initialState = [{
   // logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "Redux",
-  textThree: "Rails"
+  textThree: "Rails",
+  number: 10
 }]
 
 export default (state = initialState, action) => {

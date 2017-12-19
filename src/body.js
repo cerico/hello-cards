@@ -27,7 +27,7 @@ const Body = (props) => {
       <Top {...props}/>
       <Detail {...props}/>
       {props.product.direction == 'column' ? 
-        <WideLogo logo={props.product.logo}/>
+        <WideLogo {...props}/>
         : null
       }
     </div>

@@ -11,7 +11,7 @@ const Detail = (props) => {
 
   let border,lineHeight,paddingLeft,paddingTop
   if (props.product.direction === 'column'){
-    border = 'dotted 1px #fff',
+    border = 'dotted 1px',
     lineHeight = '1rem';
     paddingTop ='13px',
     paddingLeft = '0%' 
@@ -60,7 +60,7 @@ const Detail = (props) => {
   };
 
   const borderLeft = {
-    borderLeft: 'dotted 1px #fff'
+    borderLeft: 'dotted 1px'
   };
 
   return (

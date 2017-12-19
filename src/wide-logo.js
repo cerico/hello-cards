@@ -3,10 +3,10 @@ import React from 'react';
 var classNames = require('classnames');
 
 const WideLogo = (props) => {
-
+   
     let useStyle
     var imgStyle = {
-      backgroundImage: 'url(\'' + props.logo + '\')',
+      backgroundImage: 'url(\'' + props.product.logo + '\')',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat',
       width: '100%',
@@ -21,27 +21,26 @@ const WideLogo = (props) => {
     };
     var numStyle = {
       fontSize: '6rem',
-      // border: props.colour,
       borderRadius: '50%',
       margin: '0 auto',
       marginTop: '0px',
-      // paddingLeft: '5%',
       width: '50%',
       height: '80%',
       marginTop: '14px',
       textAlign: 'center',
       paddingTop: '19%',
-      border: '2px solid'
+      border: '2px solid',
+      marginLeft: '60px'
     }
 
-    props.logo ? 
+    props.product.logo ? 
       useStyle = imgStyle
       : useStyle = numStyle
 
 
     return (
       <div style={divStyle}>
-        <div style={useStyle}>23</div>
+        <div style={useStyle}>{props.product.number}</div>
       </div>
     )
 };

@@ -1,6 +1,6 @@
 {
   "name": "hello-cards",
-  "version": "0.0.36",
+  "version": "0.0.49",
   "description": "Put a description here",
   "main": "build/index.js",
   "peerDependencies": {
@@ -28,10 +28,11 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "pub": "npm run build && npm publish"
   },
   "author": {
-    "name": "Your name",
-    "email": "your email"
+    "name": "garethrobertlee",
+    "email": "garethrobertlee@gmail.com"
   }
 }
