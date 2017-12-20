@@ -22,7 +22,7 @@ const initialState = [{
   cols:  "2",
   direction:  'column',
   background:  '#22314b',
-  url:  "http://malham.io",
+  url:  "http://football.malham.io",
   logo: 'http://malham.io/static/206c8e0ff48823e13b036fd90c5abdd8.png',
   textOne: "React",
   textTwo: "D3",
