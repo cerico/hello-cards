@@ -102,12 +102,13 @@ class About extends React.Component  {
           <code style={style.code}>{`  description: "A music player",`}</code><br/>
           <code style={style.code}>{`  color:  "rgb(246, 235, 213)",`}</code><br/>
           <code style={style.code}>{`  cols:  "2",`}</code><br/>
-          <code style={style.code}>{`  direction:  'row',`}</code><br/>
-          <code style={style.code}>{`  background:  'rgb(79, 92, 191)',`}</code><br/>
+          <code style={style.code}>{`  direction:  'column',`}</code><br/>
+          <code style={style.code}>{`  background:  '#222',`}</code><br/>
           <code style={style.code}>{`  url:  "http://musico.malham.io",`}</code><br/>
           <code style={style.code}>{`  logo: 'http://malham.io/roco-wide.png',`}</code><br/>
           <code style={style.code}>{`  textOne: "React",`}</code><br/>
           <code style={style.code}>{`  textTwo: "Redux",`}</code><br/>
+          <code style={style.code}>{`  textThree: "Rails",`}</code><br/>
           <code style={style.code}>{`  number: 12`}</code><br/>
           <code style={style.code}>{`}`}</code>
         </pre>
